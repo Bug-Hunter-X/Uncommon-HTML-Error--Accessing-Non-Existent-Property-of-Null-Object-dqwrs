@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // This script attempts to access a non-existent property of a null object
+    myFunction(); // Calling a function before it's defined
+    console.log(document.getElementById("myDiv").nonExistentProperty);
+  </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    function myFunction(){
+      console.log('function called');
+    }
+    //Improved solution:
+    window.addEventListener('load', function() {
+      const myDiv = document.getElementById('myDiv');
+      if (myDiv) {
+        console.log(myDiv.id); // Access only if the element exists
+      } else {
+        console.error('Element with id "myDiv" not found.');
+      }
+    });
+  </script>
+</body>
+</html>
